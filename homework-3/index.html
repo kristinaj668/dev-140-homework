@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  DEV.140 Homework 1: My First Web Page (Template)
+  ============================================================
+  This template gives you an OUTLINE. You write the HTML.
+  Each comment describes what belongs there and which element
+  to consider.
+
+  YOUR PAGE MUST HAVE:
+  - At least 5 DIFFERENT semantic elements
+    (header, nav, main, section, article, figure, footer, p, ul/ol...)
+  - Exactly ONE <h1>, <h2> for sections, <h3> for subsections.
+    Never skip a level, and never pick a heading for its size.
+  - At least one <img> with DESCRIPTIVE alt text
+  - At least one <ul> or <ol> used for real list content
+  - A descriptive <title>
+  No CSS this week. Structure and meaning only.
+  ============================================================
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- TODO: Add a <title> that describes YOUR page.
+         "Document" or "Home" is not descriptive. -->
+         <title>Kristina's First Homework Assignment</title>
+</head>
+
+<body>
+    <!-- ===== PAGE HEADER =====
+         Which element holds introductory content for a page?
+         Inside it:
+         - The page's ONE main heading (your name or topic)
+         - Optional: a short tagline paragraph
+         - A navigation menu: which element wraps navigation links?
+           Hint: a list of links works well here. Use href="#some-id"
+           to jump to a section that has id="some-id". -->
+<header>
+    <h1 id="page-title">Kristina's First Homework Assignment</h1>
+    <p>Welcome to my homework page!</p>
+    <nav>
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Subtopics</a></li>
+            <li><a href="#section3">List</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- ===== MAIN CONTENT =====
+         Which element wraps the main, unique content of the page?
+         Put ALL of the sections below inside it. -->
+
+    <!-- SECTION 1: Introduction
+           - A section heading (which level comes right after h1?)
+           - An image of you or your topic. Put the file in the images
+             folder. A placeholder is there if you need one:
+             sourdough-loaf.svg
+             Write alt text that describes what's in the image.
+             Bonus: wrap the image in <figure> with a <figcaption>.
+           - A paragraph or two introducing yourself or your topic -->
+<h2 id="section1" class="content-card">Introduction</h2>
+<p>Hello, I'm Kristina! This is my first homework assignment. In order to get full credit I must add a picture with some alt text. I will add the sourdough bread.</p>
+<img src="sourdough-loaf.svg" alt="A loaf of sourdough bread" />
+
+    <!-- SECTION 2: Something with subtopics
+           (interests, highlights, key facts, projects...)
+           - A section heading
+           - At least two subtopics, each with its own heading
+             (one level below the section heading) and a paragraph.
+             Is each subtopic self-contained? Consider <article>. -->
+<h2 id="section2">About Me</h2>
+<h3>My Interests</h3>
+<p>In my free time I like to take walks, read, and trade binary options.</p>
+<h3>My Goals</h3>
+<p>I would like to learn better time management, exercise more, and sleep longer(at least 7 hours per night).</p>     
+
+    <!-- SECTION 3: A list
+           (goals, steps, rankings, favorites, recommendations...)
+           - A section heading
+           - A list. Does the order matter?
+             Yes: use an ordered list.  No: use an unordered list. -->
+<h2 id="section3">My To-Do List</h2>
+<ul class="card-grid">
+    <li class="card">read 10 pages</li>
+    <li class="card">finish project 1</li>
+    <li class="card">work from 2pm-5:30pm</li>
+</ul>
+
+    <!-- OPTIONAL: Add more sections of your own. -->
+
+
+    <!-- ===== PAGE FOOTER =====
+         Which element holds closing info like copyright or credits?
+         Include your name and the year. -->
+<footer>Kristina Johnson 2026</footer>
+</body>
+
+</html>
