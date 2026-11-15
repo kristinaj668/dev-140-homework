@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-<title>Home | Kristina Johnson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+<title>About/Contact | Kristina Johnson</title>
 </head> 
 <body>
 <header>
-<h1 id="page-title">Home</h1>
+<h1 id="page-title">About/Contact</h1>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -16,25 +19,69 @@
 <li><a href="about.html">About</a></li>
 </ul>
 </nav>
-<p id="p">Kristina Johnson: a new and evolving web student.</p>
+<p id="p">I have only been a web student for a short time, but I am passionate about learning and improving my skills.</p>
 </header> 
 <main>
 <section>
-<h2>Welcome To My First Milestone Page</h2>
+<h2>About Me</h2>
 <div class="content-card">
-<p>So far I feel like I'm learning a lot and I actually do enjoy building webpages. I plan to build on this skill and I've already started having ideas for the different pages and applications I want to build!</p>
-<img src="index-page.jpg"
-alt="A photo of a computer screen with code on it."> 
+<p>I believe I would love to become a software developer. To my current knowledge they are able to use a mix of analytical and creative skills.</p>
+<img src="about_page.jpg"
+alt="A photo of my new github profile." width="300" height="300"> 
+</div>
 </section> 
 <section>
-<h2>Goals and Aspirations</h2>
-<p>As a student my goal is to learn as much as possible to break into the field with confidence.</p>
-<h3>End of Term Goals</h3>
+<h2>Why Tech?</h2> 
+<p>I have always been interested in helping people grow. I like solving problems and sharing new information with others.</p>
+<h3>My Motivations</h3>
 <ul class="card-grid">
-<li class="card">Feel comfortable creating a basic webpage</li> 
-<li class="card">Pass Web development 140</li>
+<li class="card">I like the idea of designing the user interface</li> 
+<li class="card">I want to create convenience through my work.</li>
 </ul>
 </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>Have a question or want to work together? Reach out directly or send a message below.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Kjohnson13@my.campus.edu">Kjohnson13@my.campus.edu</a></li>
+            <li><strong>Location:</strong>  Detroit, MI</li>
+            <li><strong>Hours:</strong> Fri-Mon, 9:00 AM-5:00 PM EST</li>
+          </ul>
+        </div>
+
+        <form action="https://formspree.io/f/mppdpran" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How and whencan we collaborate?" required></textarea>
+          </div>
+
+          <div>
+   <button class="submit-btn" type="submit">Send Message!</button>
+          </div>
+
+        <div><fieldset>
+    <legend>Do you like the page so far?</legend>
+    <label><input type="radio" name="radio" value="yes" /> Yes</label>
+    <label><input type="radio" name="radio" value="no" /> No</label>
+  </fieldset></div>
+        </form>
+        </div>
+    </section>
 </main>
 <footer>Created by Kristina Johnson.</footer>
 </body>
