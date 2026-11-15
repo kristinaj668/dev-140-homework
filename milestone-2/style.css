@@ -181,7 +181,7 @@ img {
                       .card-grid  -> 2 equal columns            */
 @media (min-width: 768px) {
   body {
-    background-color:#e37af8;
+    background-color:#48de61;
   }
 
   .card-grid {
@@ -195,7 +195,7 @@ img {
                       .card-grid  -> 4 equal columns            */
 @media (min-width: 1200px) {
   body {
-    background-color: #48de61;
+    background-color: #f2f3ef;
   }
 
   .card-grid {
@@ -216,8 +216,8 @@ legend {
 }
 
 .contact-section {
-  background-color: #b1fcc7; 
-  border: 1px solid #b1fcc7; 
+  background-color: #8cb167; 
+  border: 1px solid #8cb167; 
   border-radius: 10px;       
   padding: 24px;             
   margin-top: 32px;         
@@ -252,4 +252,12 @@ nav a {
 
 nav a:hover {
   background-color: #656464; 
+}
+
+a[href^="mailto:"] {
+  color: #261075;
+}
+
+a[href^="mailto:"]:hover {
+  color: #ffffff;
 }
